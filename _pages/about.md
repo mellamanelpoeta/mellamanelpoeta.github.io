@@ -19,7 +19,11 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 ### My journey
-I'm an aspiring data scientist, applied mathematician, and economist. Currently, an undergraduate student pursuing a Bachelor's in Data Science with a full scholarship at 
+<div style="text-align: justify;">
+I'm an aspiring data scientist, applied mathematician, and economist. 
+</div>
+
+Currently, an undergraduate student pursuing a Bachelor's in Data Science with a full scholarship at 
 [ITAM](https://www.itam.mx/). My academic journey began at [UNAM](https://www.fciencias.unam.mx/) before pivoting to the exciting realm of data science. 
 
 <div style="text-align: justify;">

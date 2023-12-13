@@ -1,81 +1,64 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: web-scrapping-w/selenium
+description: comprehensive guide to web scraping using the Selenium library in Python. 
+img: assets/img/selenium_pp.png
 importance: 2
-category: work
-giscus_comments: true
+category: github
+giscus_comments: false
 ---
+# Selenium Web Scraping
+[Github Repository](https://github.com/mellamanelpoeta/selenium-web-scraping/tree/master)
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Selenium_logo.svg" alt="Selenium Logo" width="500" height="259">
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+This repository contains an executble script to create a [Docker](https://www.docker.com/get-started/) container of `selenium/standalone-chrome` image, providing a Selenium server with the Chrome browser. Additionally, it includes configurations for creating a virtual environment to perform web scraping tasks and format the extracted data for convenient handling with pandas.
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Follow these steps to set up and work with this repository:
 
+### 1. Fork
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Click on the "Fork" button at the top right corner of the repository to create a copy in your GitHub account.
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+### 2. Clone
+
+Clone the forked repository to your local machine.
+
+### 3. Run setup (for linux/mac os)
+Using the terminal, move to the exec directory an run 
+<code>./setup.sh</code>
+
+#### 3.1 If having problems with the executable
+Manually create a python environment:
+<br>
+<code>cp requirements.txt ../jupyter-notebooks
+cd ..
+cd jupyter-notebooks
+python3 -m venv .env-web-scrap
+source .env-web-scrap/bin/activate"
+pip install -r requirements.txt
+python -m ipykernel install --user --name="$VENV_NAME"
+rm -r requirements.txt</code>
+
+Manually start the docker container:
+<br>
+````md
+docker run -d --name "sel-docker" -p 4444:4444 --shm-size=2g \
+  -e SE_NODE_MAX_SESSIONS=6 \
+  -e SE_NODE_SESSION_TIMEOUT=1200 \
+  -e SE_VNC_NO_PASSWORD=1 \
+  selenium/standalone-chrome
+````
+
+### 4. Make sure docker container is up and python environment is active
+Hint: <code>docker ps</code>
+
+### 5. Work with the [notebooks](https://github.com/Majo2103/selenium-web-scrapping/tree/master/jupyter-notebooks)
+
+## Task
+Follow the instructions on the corresponding [jupyter-notebooks](https://github.com/Majo2103/selenium-web-scrapping/blob/master/jupyter-notebooks/tarea_webscraping.ipynb)
+
+[Small tutorial](https://youtu.be/lTypMlVBFM4?si=k16QnTV0jwjNGKRU)
