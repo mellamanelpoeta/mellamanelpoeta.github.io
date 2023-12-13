@@ -28,7 +28,7 @@ In addition to being a consumer website, TMDb provides an API that allows develo
 
 
 
-## Inicialización del proyecto
+## Initialization
 To run this project on any computer, [Docker](https://www.docker.com/get-started/) must be installed beforehand. Follow the instructions below:
 + Clone this repository.
 + Ensure that the Docker daemon is running.
