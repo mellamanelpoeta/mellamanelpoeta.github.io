@@ -2,7 +2,7 @@
 layout: page
 title: movies-info
 description: Data pipeline using a movies database API.
-img: assets/img/data-pipeline_pp.png
+img: assets/img/moviesinfo_pp.png
 importance: 1
 category: github
 related_publications: 

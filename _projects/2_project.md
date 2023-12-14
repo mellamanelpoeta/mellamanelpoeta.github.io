@@ -1,7 +1,7 @@
 ---
 layout: page
 title: web-scrapping-w/selenium
-description: comprehensive guide to web scraping using the Selenium library in Python. 
+description: Comprehensive guide to web scraping using the Selenium library in Python. 
 img: assets/img/selenium_pp.png
 importance: 2
 category: github

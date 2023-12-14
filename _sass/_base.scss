@@ -57,7 +57,10 @@ table.table a {
 
 figure,
 img {
-  max-width: 90vw;
+  max-width: 100%; /* Establece un máximo del 100% para mantener la responsividad */
+  width: auto; /* Hace que la imagen no se estire más allá de su tamaño original */
+  height: auto; /* Ajusta la altura automáticamente para mantener las proporciones */
+  max-height: 800px; /* Establece un máximo de altura para evitar que la imagen sea demasiado alta */
 }
 
 blockquote {
@@ -139,6 +142,7 @@ blockquote {
 
   .card-title {
     color: var(--global-text-color);
+    font-size: 18px; 
   }
 
   .card-item {
