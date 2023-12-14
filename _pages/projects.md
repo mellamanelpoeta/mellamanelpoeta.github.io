@@ -5,7 +5,7 @@ permalink: /projects/
 description: These are the last projects I've been working on.
 nav: true
 nav_order: 2
-display_categories: [github]
+display_categories: [github, articles]
 horizontal: false
 ---
 
