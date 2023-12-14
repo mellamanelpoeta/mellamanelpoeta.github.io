@@ -1,7 +1,7 @@
 ---
 layout: page
 title: FRED-data-analysis
-description: Visualization of the relation between the uneployment and labor force participation rates for each state in USA, using the FRED API for Python.
+description: Using the FRED API for Python to retrieve economic data, ending with a visualization of the relation between the uneployment and labor force participation rates for each state in USA.
 img: assets/img/fred_pp.png
 importance: 3
 category: github
