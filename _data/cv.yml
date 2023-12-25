@@ -16,15 +16,17 @@
       year: 2021-2025
       description:
         - Academic Scholarship - 100%.
-        - Relevant coursework - Advanced Calculus (single variable and multivarible), Probability, Lineal Algebra, Advanced Data Structures, Databases (SQL and NoSQL).
+        - Relevant coursework - Advanced Calculus (single variable and multivarible), Real Analysis, Probability(I, II), Advanced Lineal Algebra, Algorithms, Advanced Data Structures, Databases (SQL and NoSQL).
+        - Programming languages - Python & Java for OOP; SQL, mongosh, cypher, CQL; R (in progress)
         - title: Economics branch
           contents:
-            - Intermediate Microeconomics, Macroeconomics, History of Economic Analysis, Accounting, Applied Maths for Economists.
+            - Intermediate Microeconomics, Macroeconomics, Accounting(I, II), History of Economic Analysis, Applied Mathematics for Economics.
     - title: Physics studies 
       institution: Facultad de Ciencias UNAM, Mexico City
       year: 2019-2021
       description:
         - Completed 2 years of the Physics degree.
+        - Relevant coursework - Superior Algebra, Calculus(I, II, III), Lineal Algebra, Classical Mechanics, Collective Phenomena, Topology.
 
 - title: Experience
   type: time_table
@@ -33,7 +35,7 @@
       institution: ITAM, Mexico City
       year: 2023
       description:
-          - Engaged in a project aimed at measuring polarization in Mexico through various sources such as news articles, social media, and more, utilizing Natural Language Processing (NLP) techniques.
+          - Engaged in a project aimed at measuring polarization in Mexico through various sources such as news articles, social media, and more, utilizing Natural Language Processing (NLP) techniques and Machine Learning algorithms such as Glove and K-NN.
     - title: Undergraduate Teaching Assistant 
       institution: ITAM, Mexico City
       year: 2022
