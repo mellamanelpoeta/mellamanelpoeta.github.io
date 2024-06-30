@@ -13,14 +13,20 @@
   contents:
     - title: BSc Data Science
       institution: ITAM, Mexico City
-      year: 2021-2025
+      year: 2021- Fall 2025
       description:
         - Academic Scholarship - 100%.
-        - Relevant coursework - Advanced Calculus (single variable and multivarible), Real Analysis, Probability(I, II), Advanced Lineal Algebra, Algorithms, Advanced Data Structures, Databases (SQL and NoSQL).
-        - Programming languages - Python & Java for OOP; SQL, mongosh, cypher, CQL; R (in progress)
-        - title: Economics branch
+        - title: Mathematics 
           contents:
-            - Intermediate Microeconomics, Macroeconomics, Accounting(I, II), History of Economic Analysis, Applied Mathematics for Economics.
+          - Advanced Calculus (single variable & multivariable), Advanced Probability (I, II), Statistical Inference,
+            Lineal Algebra (I, II), Real Analysis (I, II).
+        - title: Programming 
+          contents:
+          - Artificial Inteligence, Advanced Data Structures (I, II), Databases (SQL, NoSQL), Data Acquisition, Information visualization.
+        - title: Economics
+          contents:
+            - Intermediate Microeconomics, Macroeconomics, Finance Topics, Accounting (I, II), History of Economic Analysis, Applied
+              Mathematics for Economics.
     - title: Physics studies 
       institution: Facultad de Ciencias UNAM, Mexico City
       year: 2019-2021
@@ -78,10 +84,10 @@
   contents:
     - year: Fall 2023
       items: 
-        - Won the Academic Excellence Award with the highest average in the Data Science Degree program.
+        - Won the Academic Excellence Award with the highest GPA in the Data Science Degree program.
     - year: 2021-2022
       items: 
-        - Awarded ITAM's Highest GPA.
+        - Recognition for Highest GPAs of the CS Division Programs
 
     - year: 2020
       items: 
@@ -97,14 +103,17 @@
   contents:
     - title: Data Science
       items: 
-        - NLP
+        - LLMs and RAGs
         - Machine Learning
+    - title: Software Development
+      items: 
+        - Web Development
+        - Algorithms
     - title: Mathematics
       items:
         - Real Analysis
         - Lineal Algebra
         - Probability and Statistics
-
     - title: Economics
       items:
         - Microeconomics

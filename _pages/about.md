@@ -35,7 +35,7 @@ I embarked on my academic adventure with a two-year stint in the Physics UNAM pr
 </p>
 <div>
 <div style="text-align: justify;">
-I have delved deep into the realms of theoretical mathematics, exploring subjects such as Advanced Calculus, Probability, Linear Algebra, Real Analysis, Differential Equations, and more. My academic pursuits extend beyond the confines of traditional data science, as I've also ventured into the fascinating world of economics. Courses such as Macroeconomics, Intermediate Microeconomics, Market Design, History of Economic Analysis, Accounting and Applied Maths for Economists have enriched my understanding of the interdisciplinary nature of data science.
+I have delved deep into the realms of theoretical mathematics, exploring subjects such as Advanced Calculus, Probability, Linear Algebra, Real Analysis, Differential Equations, and more. My academic pursuits extend beyond the confines of traditional data science, as I've also ventured into the fascinating world of economics. Courses such as Macroeconomics, Intermediate Microeconomics, Market Design, Finance Topics, History of Economic Analysis, Accounting and Applied Maths for Economists have enriched my understanding of the interdisciplinary nature of data science.
 </div>
 <p>
 </p>
