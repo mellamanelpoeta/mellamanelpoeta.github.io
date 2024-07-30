@@ -2,44 +2,46 @@
 layout: default
 ---
 
-<!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
+        <!-- about.html -->
+        <div class="post">
+          <header class="post-header">
+            <h1 class="post-title">
+              {% if site.title == "blank" -%}
+                <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+              {%- else -%}
+                {{ site.title }}
+              {%- endif %}
+            </h1>
+            <p class="desc">{{ page.subtitle }}</p>
+          </header>
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+          <article>
+            {% if page.profile -%}
+              <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+                {%- if page.profile.image %}
+                  {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
-              {% endif %}
+                  {% if page.profile.image_circular %}
+                    {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle non-interactive" -%}
+                  {% else %}
+                    {%- assign profile_image_class = "img-fluid z-depth-1 rounded non-interactive" -%}
+                  {% endif %}
 
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image
-              cache_bust=true -%}
-            {% endif -%}
-            {%- if page.profile.more_info %}
-            <div class="more-info">
-              {{ page.profile.more_info }}
-            </div>
+                  <img src="{{ profile_image_path }}" alt="{{ page.profile.image }}" class="{{ profile_image_class }}" oncontextmenu="return false;" ondragstart="return false;">
+                {% endif -%}
+                {%- if page.profile.more_info %}
+                  <div class="more-info">
+                    {{ page.profile.more_info }}
+                  </div>
+                {%- endif %}
+              </div>
             {%- endif %}
-          </div>
-          {%- endif %}
 
-          <div class="clearfix">
-            {{ content }}
-          </div>
+            <div class="clearfix">
+              {{ content }}
+            </div>
+        </div>
+
 
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}

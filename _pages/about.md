@@ -40,5 +40,5 @@ I have delved deep into the realms of theoretical mathematics, exploring subject
 <p>
 </p>
 <center>
-  <img src="/assets/img/banner.png" alt="">
+  <img src="/assets/img/banner.png" alt="banner" oncontextmenu="return false;" ondragstart="return false;">
 </center>
